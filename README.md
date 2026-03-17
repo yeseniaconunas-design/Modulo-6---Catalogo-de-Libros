@@ -124,10 +124,27 @@ Las capturas incluyen archivos GIF que permiten visualizar el comportamiento de 
 
 Las capturas utilizadas en este proyecto son:
 
-* **AgregarLibro.gif**
-* **BookList.gif**
-* **Categorias.gif**
-* **EliminarLibro.gif**
+## Agregar libro
+
+![Agregar libro](screenshots/AgregarLibro.gif)
+
+---
+
+## Catálogo de libros
+
+![BookList](screenshots/BookList.gif)
+
+---
+
+## Categorías
+
+![Categorias](screenshots/Categorias.gif)
+
+---
+
+## Eliminar libro
+
+![Eliminar libro](screenshots/EliminarLibro.gif)
 
 Estas capturas muestran:
 
