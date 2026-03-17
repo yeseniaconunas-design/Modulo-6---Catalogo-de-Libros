@@ -1,27 +1,51 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import Vue from "vue"
+import Router from "vue-router"
 
-Vue.use(VueRouter)
+import InicioView from "../views/InicioView.vue"
+import ListaLibrosView from "../views/ListaLibrosView.vue"
+import CategoriasView from "../views/CategoriasView.vue"
+import DetalleLibroView from "../views/DetalleLibroView.vue"
+import AgregarLibroView from "../views/AgregarLibroView.vue"
 
-const routes = [
-  {
-    path: '/',
-    name: 'home',
-    component: HomeView
-  },
-  {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  }
+Vue.use(Router)
+
+export default new Router({
+
+mode:"history",
+
+routes:[
+
+{
+path:"/",
+name:"inicio",
+component:InicioView
+},
+
+{
+path:"/libros",
+name:"catalogo",
+component:ListaLibrosView
+},
+
+{
+path:"/categorias",
+name:"categorias",
+component:CategoriasView
+},
+
+{
+path:"/agregar",
+name:"agregar",
+component:AgregarLibroView
+},
+
+{
+path:"/libros/:id",
+name:"detalle",
+component:DetalleLibroView,
+props:true
+}
+
 ]
 
-const router = new VueRouter({
-  routes
 })
-
-export default router

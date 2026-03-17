@@ -1,0 +1,441 @@
+/* =========================
+   BASE
+========================= */
+
+body{
+font-family:"Segoe UI",sans-serif;
+background:#fff5f8;
+margin:0;
+}
+
+
+/* =========================
+   TITULOS
+========================= */
+
+.titulo{
+text-align:center;
+color:#c2185b;
+margin-top:30px;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 30px;
+background:linear-gradient(90deg,#f8bbd0,#fce4ec);
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+color:#880e4f;
+}
+
+.nav-links{
+display:flex;
+gap:20px;
+}
+
+.nav-links a{
+text-decoration:none;
+font-weight:600;
+color:#880e4f;
+transition:.2s;
+}
+
+.nav-links a:hover{
+color:#d81b60;
+transform:scale(1.05);
+}
+
+/* =========================
+   INICIO
+========================= */
+
+.inicio-container{
+
+display:flex;
+justify-content:center;
+align-items:center;
+height:70vh;
+
+}
+
+.inicio-card{
+
+background:white;
+
+padding:40px;
+
+border-radius:20px;
+
+text-align:center;
+
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+
+max-width:450px;
+
+}
+
+.titulo-principal{
+
+color:#c2185b;
+font-size:32px;
+
+}
+
+.mensaje{
+
+margin-top:10px;
+font-size:18px;
+
+}
+
+.submensaje{
+
+margin-top:5px;
+color:#777;
+
+}
+
+.btn-explorar{
+
+margin-top:20px;
+
+background:#ec407a;
+
+border:none;
+
+padding:10px 20px;
+
+border-radius:10px;
+
+color:white;
+
+font-weight:bold;
+
+cursor:pointer;
+
+}
+/* =========================
+   BOTONES
+========================= */
+
+.btn-ver{
+margin-top:12px;
+background:#f48fb1;
+border:none;
+padding:8px 16px;
+border-radius:8px;
+color:white;
+cursor:pointer;
+}
+
+.btn-agregar{
+background:#ec407a;
+border:none;
+padding:10px;
+border-radius:10px;
+color:white;
+font-weight:bold;
+cursor:pointer;
+}
+
+.btn-eliminar{
+margin-top:10px;
+background:#e57373;
+border:none;
+padding:8px 14px;
+border-radius:8px;
+color:white;
+cursor:pointer;
+}
+
+.btn-volver{
+margin-top:20px;
+background:#ec407a;
+border:none;
+padding:10px 18px;
+border-radius:10px;
+color:white;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn-volver:hover{
+background:#d81b60;
+transform:scale(1.05);
+}
+
+
+/* =========================
+   FORMULARIO
+========================= */
+
+.form-card{
+background:white;
+padding:30px;
+max-width:400px;
+margin:auto;
+border-radius:18px;
+box-shadow:0 6px 15px rgba(0,0,0,0.08);
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+input,
+select,
+textarea{
+padding:10px;
+border-radius:8px;
+border:1px solid #f8bbd0;
+}
+
+.filtros{
+background:white;
+margin:20px auto;
+padding:20px;
+max-width:720px;
+border-radius:18px;
+box-shadow:0 6px 15px rgba(0,0,0,0.08);
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:16px;
+}
+
+.filtros label{
+display:flex;
+flex-direction:column;
+font-weight:600;
+color:#880e4f;
+gap:6px;
+font-size:14px;
+}
+
+.preview-card{
+margin:30px auto;
+max-width:500px;
+background:white;
+padding:22px;
+border-radius:18px;
+box-shadow:0 6px 15px rgba(0,0,0,0.08);
+}
+
+.preview-card h3{
+margin-bottom:12px;
+color:#c2185b;
+}
+
+.mensaje-vacio{
+text-align:center;
+margin-top:18px;
+color:#6a1b9a;
+font-weight:600;
+}
+
+.mensaje-error{
+color:#c62828;
+font-weight:600;
+margin-top:8px;
+}
+
+.mensaje-exito{
+color:#2e7d32;
+font-weight:600;
+margin-top:8px;
+}
+
+.formulario-detalle{
+display:flex;
+flex-direction:column;
+gap:12px;
+background:white;
+padding:24px;
+border-radius:18px;
+box-shadow:0 6px 15px rgba(0,0,0,0.08);
+}
+
+.acciones-detalle{
+display:flex;
+gap:12px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+
+/* =========================
+   GRID LIBROS
+========================= */
+
+.libros-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+padding:30px;
+}
+
+
+/* =========================
+   TARJETAS LIBROS
+========================= */
+
+.libro-card{
+background:white;
+padding:20px;
+border-radius:18px;
+box-shadow:0 6px 15px rgba(0,0,0,0.08);
+text-align:center;
+transition:.3s;
+}
+
+.libro-card:hover{
+transform:translateY(-6px);
+}
+
+.icono{
+font-size:36px;
+margin-bottom:10px;
+}
+
+.autor{
+color:#7b1fa2;
+font-weight:600;
+}
+
+.categoria{
+background:#fce4ec;
+display:inline-block;
+padding:5px 12px;
+border-radius:12px;
+margin-top:6px;
+font-size:13px;
+}
+
+
+/* =========================
+   DETALLE LIBRO
+========================= */
+
+.detalle-container{
+display:flex;
+justify-content:center;
+padding:40px;
+}
+
+.detalle-card{
+background:white;
+padding:30px;
+border-radius:20px;
+max-width:420px;
+text-align:center;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.icono-grande{
+font-size:50px;
+margin-bottom:10px;
+}
+
+.descripcion{
+margin-top:15px;
+line-height:1.6;
+color:#444;
+}
+
+
+/* =========================
+   CATEGORIAS
+========================= */
+
+.categorias-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.categoria-card{
+padding:20px;
+border-radius:16px;
+text-align:center;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+font-size:18px;
+box-shadow:0 6px 15px rgba(0,0,0,0.08);
+}
+
+.categoria-card:hover{
+transform:scale(1.05);
+}
+
+
+/* COLORES POR CATEGORIA */
+
+.romance{
+background:#f8bbd0;
+color:#880e4f;
+}
+
+.clasico{
+background:#e1bee7;
+color:#4a148c;
+}
+
+.drama{
+background:#ffcdd2;
+color:#b71c1c;
+}
+
+.fantasia{
+background:#d1c4e9;
+color:#311b92;
+}
+
+
+/* =========================
+   ANIMACIONES
+========================= */
+
+.libro-enter-active,
+.libro-leave-active{
+transition:all .4s ease;
+}
+
+.libro-enter{
+opacity:0;
+transform:scale(0.9);
+}
+
+.libro-leave-to{
+opacity:0;
+transform:scale(0.8);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:600px){
+
+.navbar{
+flex-direction:column;
+gap:10px;
+}
+
+.libros-grid{
+grid-template-columns:1fr;
+}
+
+}
